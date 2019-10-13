@@ -35,7 +35,7 @@ for subdirs, dirs, files in os.walk(root):
             #print("inside if...")
             #image = plt.imread(filepath)         
             im = Image.open(filepath).resize(size)
-            im.save('D:\\zohaib\\piaic\\data_science\\ai_anees_ahmed\\image_into_array\\resize_image\\'+str(count)+'.jpg','JPEG')
+            im.save('.\\resize_image\\'+str(count)+'.jpg','JPEG')
             #im_resize = im.resize(size)
             #making a new folder for resized files and saving the resized files  
             img_array[count]=im
