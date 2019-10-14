@@ -13,6 +13,11 @@ from PIL import Image
 
 #Root directory
 root = '.'
+
+'''
+change this path to your directory
+'''
+folder_path = 'D:\\zohaib\\piaic\\data_science\\ai_anees_ahmed\\image_into_array\\resize_image\\'
 #image array
 img_array = np.zeros([20,800,800,3])
 # tuple for resizing the images 'wxh'
@@ -35,7 +40,7 @@ for subdirs, dirs, files in os.walk(root):
             #print("inside if...")
             #image = plt.imread(filepath)         
             im = Image.open(filepath).resize(size)
-            im.save('D:\\zohaib\\piaic\\data_science\\ai_anees_ahmed\\image_into_array\\resize_image\\'+str(count)+'.jpg','JPEG')
+            im.save(folder_path+str(count)+'.jpg','JPEG')
             #im_resize = im.resize(size)
             #making a new folder for resized files and saving the resized files  
             img_array[count]=im
