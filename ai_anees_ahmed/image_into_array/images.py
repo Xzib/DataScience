@@ -17,7 +17,7 @@ root = '.'
 '''
 change this path to your directory
 '''
-folder_path = 'D:\\zohaib\\piaic\\data_science\\ai_anees_ahmed\\image_into_array\\resize_image\\'
+folder_path = '.\\photos'
 #image array
 img_array = np.zeros([20,800,800,3])
 # tuple for resizing the images 'wxh'
