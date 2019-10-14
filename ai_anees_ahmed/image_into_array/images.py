@@ -44,3 +44,10 @@ for subdirs, dirs, files in os.walk(root):
 print(type(img_array))
 print(img_array.shape)
 print(img_array[:6,:200,:200,:3]) 
+
+
+# numnber of file 
+# numpy img_array
+# image resize
+# image convert
+# save function 
