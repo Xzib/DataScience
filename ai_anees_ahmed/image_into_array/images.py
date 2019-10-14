@@ -40,7 +40,8 @@ for subdirs, dirs, files in os.walk(root):
             #print("inside if...")
             #image = plt.imread(filepath)         
             im = Image.open(filepath).resize(size)
-            im.save(folder_path+str(count)+'.jpg','JPEG')
+
+            im.save('.\\resize_image\\'+str(count)+'.jpg','JPEG')
             #im_resize = im.resize(size)
             #making a new folder for resized files and saving the resized files  
             img_array[count]=im
@@ -49,3 +50,10 @@ for subdirs, dirs, files in os.walk(root):
 print(type(img_array))
 print(img_array.shape)
 print(img_array[:6,:200,:200,:3]) 
+
+
+# numnber of file 
+# numpy img_array
+# image resize
+# image convert
+# save function 
